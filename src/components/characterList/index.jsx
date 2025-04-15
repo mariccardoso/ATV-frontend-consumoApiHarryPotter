@@ -51,7 +51,7 @@ const CharacterList = () => {
                     </div>
                     <div className={styles.content}>
                         <h2 className={styles.characterTitle}>{character.name}</h2>
-                        <p className={styles.director}>Casa de Hogwarts: {character.house}</p>
+                        <p className={styles.yearOfBirth}>Ano de nascimento: {character.yearOfBirth}</p>
                         <p className={styles.actor}>Ator: {character.actor}</p>
                         <div className={styles.rating}>
                             <span className={styles[character.house?.toLowerCase()]}>{character.house}</span>
