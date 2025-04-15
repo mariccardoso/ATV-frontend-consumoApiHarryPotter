@@ -1,0 +1,117 @@
+
+.characterGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.characterCard {
+    width: 45%;
+    height: 25rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #1b0064;
+    display: flex;
+    flex-direction: row;
+}
+
+.characterCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imageContainer {
+    width: 40%;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.characterCard:hover .image {
+    transform: scale(1.05);
+}
+
+.content {
+    padding: 15px;
+}
+
+.characterTitle {
+    margin: 0 0 10px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffff1a;
+}
+
+.director {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.actor {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.rating {
+    margin-top: 10px;
+}
+
+.gryffindor {
+    display: inline-block;
+    background-color: #ca0d0d;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.slytherin {
+    display: inline-block;
+    background-color: #2e6f2d;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hufflepuff {
+    display: inline-block;
+    background-color: #f0c14b;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ravenclaw {
+    display: inline-block;
+    background-color: #0e4ea1;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .characterGrid {
+        justify-content: center;
+    }
+
+    .characterCard {
+        width: 280px;
+    }
+}
